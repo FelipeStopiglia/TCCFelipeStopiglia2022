@@ -1194,81 +1194,6 @@ Query=`predictive_maintenance$`</DefaultAnnotationText>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
     </Node>
-    <Node ToolID="45">
-      <GuiSettings Plugin="Score">
-        <Position x="66" y="942" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Value name="modelChoice">Local Model</Value>
-          <Value name="score field">Resposta</Value>
-          <Value name="is oversampled">False</Value>
-          <Value name="oversampled value">
-          </Value>
-          <Value name="original percent">2</Value>
-          <Value name="log y">False</Value>
-          <Value name="prediction.interval">False</Value>
-          <Value name="interval.level">95</Value>
-          <Value name="append.xdf">False</Value>
-          <Value name="num.records">256000</Value>
-          <Value name="credentials">
-          </Value>
-          <Value name="models">
-          </Value>
-          <Value name="page">
-          </Value>
-          <Value name="errorStatus">
-          </Value>
-          <Value name="modelDetailJSON">
-          </Value>
-          <Value name="modelDetails">{"Name":"","Owner":"","Status":"","Id":"","LastDeployment":"","LastUpdated":"","LatestVersion":"","ActiveVersion":"","NumReplications":"","NumVersions":""}</Value>
-          <Value name="promoteURL">
-          </Value>
-          <Value name="username">
-          </Value>
-          <Value name="model_name">
-          </Value>
-          <Value name="model_owner">
-          </Value>
-          <Value name="apiKey">
-          </Value>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings Macro="Score\Supporting_Macros\score-engine.yxmc" EngineDll="Macro" EngineDllEntryPoint="Score\Supporting_Macros\score-engine.yxmc" />
-    </Node>
-    <Node ToolID="46">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="66" y="1038" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\Users\felip\AppData\Local\Temp\Engine_1220_ab22ca83a883734481f252e18c266d46_\Engine_1220_953e71974694984ab2c0bc5a3822d8a2~.yxdb</TempFile>
-          <TempFileDataProfiling />
-          <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
-            <View1>
-              <DefaultTab>Perfil</DefaultTab>
-              <Hints>
-                <Table />
-              </Hints>
-            </View1>
-            <View2 />
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
     <Node ToolID="47">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
         <Position x="54" y="330" />
@@ -1689,9 +1614,6 @@ Query=`predictive_maintenance$`</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="predictions">
           <RecordInfo>
             <Field name="Actual" size="1073741823" source="R-DATA:" type="V_WString" />
@@ -1807,209 +1729,6 @@ Query=`predictive_maintenance$`</DefaultAnnotationText>
         </Annotation>
       </Properties>
     </Node>
-    <Node ToolID="37">
-      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="1229" y="65" width="397" height="229" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Caption>Data Investigation</Caption>
-          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
-          <Disabled value="False" />
-          <Folded value="False" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <ChildNodes>
-        <Node ToolID="3">
-          <GuiSettings>
-            <Position x="1314" y="114" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Value name="Select Fields">UDI=False,Product ID=True,Type=True,Air temperature [K]=True,Process temperature [K]=True,Rotational speed [rpm]=True,Torque [Nm]=True,Tool wear [min]=True,Target=True,Failure Type=True</Value>
-              <Value name="Sample Data">False</Value>
-              <Value name="Number">True</Value>
-              <Value name="NNumber">5000</Value>
-              <Value name="Percent">False</Value>
-              <Value name="NPercent">10</Value>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
-        </Node>
-        <Node ToolID="4">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1254" y="209" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <TempFile>C:\Users\felip\AppData\Local\Temp\Engine_1220_ab22ca83a883734481f252e18c266d46_\Engine_1220_3b01df4518e51040bb94e6d853d04188~.yxdb</TempFile>
-              <TempFileDataProfiling />
-              <Layout>
-                <ViewMode>Single</ViewMode>
-                <ViewSize value="100" />
-                <View1>
-                  <DefaultTab>Relatório</DefaultTab>
-                  <Hints>
-                    <Table />
-                  </Hints>
-                </View1>
-                <View2 />
-              </Layout>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-        </Node>
-        <Node ToolID="5">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1314" y="210" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <TempFile>C:\Users\felip\AppData\Local\Temp\Engine_1220_ab22ca83a883734481f252e18c266d46_\Engine_1220_913a51bca87d80408b435c4030cb8ff4~.yxdb</TempFile>
-              <TempFileDataProfiling />
-              <Layout>
-                <ViewMode>Single</ViewMode>
-                <ViewSize value="100" />
-                <View1>
-                  <DefaultTab>Report</DefaultTab>
-                  <Hints>
-                    <Table />
-                  </Hints>
-                </View1>
-                <View2 />
-              </Layout>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-        </Node>
-        <Node ToolID="6">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1374" y="210" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <TempFile>C:\Users\felip\AppData\Local\Temp\Engine_1220_ab22ca83a883734481f252e18c266d46_\Engine_1220_e88341aaa2dade46b436ea3a90f7f00c~.yxdb</TempFile>
-              <TempFileDataProfiling />
-              <Layout>
-                <ViewMode>Single</ViewMode>
-                <ViewSize value="100" />
-                <View1>
-                  <DefaultTab>Relatório</DefaultTab>
-                  <Hints>
-                    <Table />
-                  </Hints>
-                </View1>
-                <View2 />
-              </Layout>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-        </Node>
-        <Node ToolID="12">
-          <GuiSettings>
-            <Position x="1506" y="114" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Value name="do target">False</Value>
-              <Value name="target">UDI</Value>
-              <Value name="target level" />
-              <Value name="use fields">"Air temperature [K]","Process temperature [K]","Rotational speed [rpm]","Torque [Nm]","Tool wear [min]","Target"</Value>
-              <Value name="Pearson">False</Value>
-              <Value name="Spearman">True</Value>
-              <Value name="Hoeffding">False</Value>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings Macro="Predictive Tools\Association_Analysis.yxmc" />
-        </Node>
-        <Node ToolID="13">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1470" y="210" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <TempFile>C:\Users\felip\AppData\Local\Temp\Engine_1220_ab22ca83a883734481f252e18c266d46_\Engine_1220_56274dde3572844b98784118c8009420~.yxdb</TempFile>
-              <TempFileDataProfiling />
-              <Layout>
-                <ViewMode>Single</ViewMode>
-                <ViewSize value="100" />
-                <View1>
-                  <DefaultTab>Relatório</DefaultTab>
-                  <Hints>
-                    <Table />
-                  </Hints>
-                </View1>
-                <View2 />
-              </Layout>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-        </Node>
-        <Node ToolID="14">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1542" y="210" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <TempFile>C:\Users\felip\AppData\Local\Temp\Engine_1220_ab22ca83a883734481f252e18c266d46_\Engine_1220_7d9fde06f9be91418ba556eb6f070482~.yxdb</TempFile>
-              <TempFileDataProfiling />
-              <Layout>
-                <ViewMode>Single</ViewMode>
-                <ViewSize value="100" />
-                <View1>
-                  <DefaultTab>Relatório</DefaultTab>
-                  <Hints>
-                    <Table />
-                  </Hints>
-                </View1>
-                <View2 />
-              </Layout>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-        </Node>
-      </ChildNodes>
-    </Node>
   </Nodes>
   <Connections>
     <Connection>
@@ -2023,14 +1742,6 @@ Query=`predictive_maintenance$`</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="1" Connection="Output" />
       <Destination ToolID="7" Connection="Input" />
-    </Connection>
-    <Connection Wireless="True">
-      <Origin ToolID="7" Connection="Output" />
-      <Destination ToolID="3" Connection="Field Input" />
-    </Connection>
-    <Connection Wireless="True">
-      <Origin ToolID="7" Connection="Output" />
-      <Destination ToolID="12" Connection="Data Input" />
     </Connection>
     <Connection>
       <Origin ToolID="7" Connection="Output" />
@@ -2108,14 +1819,6 @@ Query=`predictive_maintenance$`</DefaultAnnotationText>
       <Origin ToolID="28" Connection="Report" />
       <Destination ToolID="32" Connection="Input" />
     </Connection>
-    <Connection Wireless="True">
-      <Origin ToolID="33" Connection="Output" />
-      <Destination ToolID="45" Connection="Model" />
-    </Connection>
-    <Connection Wireless="True">
-      <Origin ToolID="19" Connection="Validation" />
-      <Destination ToolID="45" Connection="Data" />
-    </Connection>
     <Connection>
       <Origin ToolID="33" Connection="Output" />
       <Destination ToolID="34" Connection="Input" />
@@ -2143,10 +1846,6 @@ Query=`predictive_maintenance$`</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="42" Connection="Reports" />
       <Destination ToolID="44" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="45" Connection="Output" />
-      <Destination ToolID="46" Connection="Input" />
     </Connection>
     <Connection Wireless="True">
       <Origin ToolID="19" Connection="Estimation" />
@@ -2203,26 +1902,6 @@ Query=`predictive_maintenance$`</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="78" Connection="Report" />
       <Destination ToolID="81" Connection="Input" />
-    </Connection>
-    <Connection Wireless="True">
-      <Origin ToolID="3" Connection="Output" />
-      <Destination ToolID="4" Connection="Input" />
-    </Connection>
-    <Connection Wireless="True">
-      <Origin ToolID="3" Connection="Reports" />
-      <Destination ToolID="5" Connection="Input" />
-    </Connection>
-    <Connection Wireless="True">
-      <Origin ToolID="3" Connection="Interactive" />
-      <Destination ToolID="6" Connection="Input" />
-    </Connection>
-    <Connection Wireless="True">
-      <Origin ToolID="12" Connection="Output" />
-      <Destination ToolID="13" Connection="Input" />
-    </Connection>
-    <Connection Wireless="True">
-      <Origin ToolID="12" Connection="Correlation Matrix" />
-      <Destination ToolID="14" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
